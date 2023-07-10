@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ff</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index_2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $('#section .img_pizza img').css("transform","translateX(1000px) rotate(0deg)").css("opacity","1")
+                $('#section .img_coke img').css("transform","translateY(150px)").css("opacity","1")
+                $('#section .contents_box').css("opacity","1")
+                $('#menu1').fadeIn().css('display','flex');
+                $('#nav2 ul li:nth-of-type(1)').css("border-bottom","2.5px solid #76a47f")
+
+            $('#nav2>ul>li:nth-of-type(1)').click(function(){
+                $('#section2 img').removeAttr("style")
+                $('#section3 img').removeAttr("style")
+                $('#section4 img').removeAttr("style")
+                $('#nav2 ul li').removeAttr("style")
+                $('#section2').hide();
+                $('#section3').hide();
+                $('#section4').hide();
+
+                $('#section').fadeIn();
+                $('#nav2').css("background-color","#32763f")
+                $('#nav2').css("border-bottom","0.2px solid #2a6535")
+                $('#section .img_pizza img').css("transform","translateX(1000px) rotate(0deg)").css("opacity","1")
+                $('#section .img_coke img').css("transform","translateY(150px)").css("opacity","1")
+                $('#section .contents_box').css("opacity","1")
+                $('#menu1').fadeIn().css('display','flex');
+                $('#menu2').hide();
+                $('#menu3').hide();
+                $('#menu4').hide();
+                $('#nav2 ul li:nth-of-type(1)').css("border-bottom","2.5px solid #76a47f")
+
+
+            });
+            $('#nav2>ul>li:nth-of-type(2)').click(function(){
+                $('#section img').removeAttr("style");
+                $('#section3 img').removeAttr("style");
+                $('#section4 img').removeAttr("style");
+                $('#nav2 ul li').removeAttr("style")
+                $('#section').hide();
+                $('#section3').hide();
+                $('#section4').hide();
+
+                $('#section2').fadeIn();
+                $('#section2 .contents_box').css("opacity","1")
+                $('#nav2').css("background-color","#763232")
+                $('#nav2').css("border-bottom","0.2px solid #612a2a")
+                $('#section2 .img_pasta img').css("transform","translateY(-90px)").css("opacity","1")
+                $('#section2 .img_pasta2 img').css("transform","translateY(-70px)").css("opacity","1")
+                $('#section2 .img_pasta3 img').css("transform","translateY(200px)").css("opacity","1")
+                $('#menu2').fadeIn().css('display','flex');
+                $('#menu1').hide();
+                $('#menu3').hide();
+                $('#menu4').hide();
+                $('#nav2 ul li:nth-of-type(2)').css("border-bottom","2.5px solid #895a5a")
+
+            });
+            $('#nav2>ul>li:nth-of-type(3)').click(function(){
+
+                $('#section img').removeAttr("style");
+                $('#section2 img').removeAttr("style");
+                $('#section4 img').removeAttr("style");
+                $('#nav2 ul li').removeAttr("style")
+                $('#section').hide();
+                $('#section2').hide();
+                $('#section4').hide();
+
+                $('#section3').fadeIn();
+                $('#section3 .contents_box').css("opacity","1")
+                $('#nav2').css("background-color","#e95b1d")
+                $('#nav2').css("border-bottom","0.2px solid #d3531a")
+                $('#section3 .img_salad img').css("transform","translateY(210px)").css("opacity","1")
+                $('#section3 .img_salad2 img').css("transform","translateY(-250px)").css("opacity","1")
+                $('#section3 .img_salad3 img').css("transform","translateY(-250px)").css("opacity","1")
+                $('#menu3').fadeIn().css('display','flex');
+                $('#menu1').hide();
+                $('#menu2').hide();
+                $('#menu4').hide();
+                $('#nav2 ul li:nth-of-type(3)').css("border-bottom","2.5px solid #f8824e")
+            });
+            $('#nav2>ul>li:nth-of-type(4)').click(function(){
+
+                $('#section img').removeAttr("style");
+                $('#section2 img').removeAttr("style");
+                $('#section3 img').removeAttr("style");
+                $('#nav2 ul li').removeAttr("style")
+                $('#section').hide();
+                $('#section2').hide();
+                $('#section3').hide();
+
+                $('#section4').fadeIn();
+                $('#section4 .contents_box').css("opacity","1")
+                $('#nav2').css("background-color","#2b86d3")
+                $('#nav2').css("border-bottom","0.2px solid #2677bb")
+                $('#section4 .img_drink img').css("transform","translateY(50px)").css("opacity","1")
+                $('#section4 .img_drink2 img').css("transform","translateX(1200px)").css("opacity","1")
+                $('#menu4').fadeIn().css('display','flex');
+                $('#menu1').hide();
+                $('#menu2').hide();
+                $('#menu3').hide();
+                $('#nav2 ul li:nth-of-type(4)').css("border-bottom","2.5px solid #359ef7")
+                
+            });
+            
+        });
+    </script>
+</head>
+<body>
+        <header>
+            <img src="img/logo/logo_green_1.png">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">ORDER</a></li>
+            </ul>
+        </nav>
+        <div id="nav2">
+            <ul>
+                <li><a href="#">피자</a></li>
+                <li><a href="#">파스타</a></li>
+                <li><a href="#">샐러드</a></li>
+                <li><a href="#">음료</a></li>
+            </ul>
+        </div>
+        <div id="section">
+            <div class="contents_box">
+                <h1>Pizza</h1>
+                <h3>최고의 셰프가 만드는 Le Calandre만의 독특한 피자!<br>
+                    아무곳에서도 맛보지 못하는 당신이 죽기전 한번쯤은<br>
+                    먹어봐야 할 피자입니다. 이곳에서 다양한 피자를 살펴보세요!!  
+                </h3>
+            </div>
+            <div class="img_pizza">
+                <img src="img/pizza/2.png">
+            </div>
+            <div class="img_coke">
+                <img src="img/index2/cola.png">
+            </div>
+        </div>
+        <div id="section2">
+            <div class="img_pasta3">
+                <img src="img/pasta/4.png">
+            </div>
+            <div class="contents_box">
+                <h1>Pasta</h1>
+                <h3>맛과 영양을 고루 챙긴 Le Calandre만의 특급 레시피로<br>
+                    여러분들을 찾아가겠습니다!신선한 재료와 다양한 <br>
+                    부가적인 메뉴들과 함께 즐겨보세요!
+                </h3>
+            </div>
+            <div class="img_pasta">
+                <img src="img/index2/333.png">
+            </div>
+            <div class="img_pasta2">
+                <img src="img/index2/555.png">
+            </div>
+        </div>
+        <div id="section3">
+            <div class="contents_box">
+                <h1>Salad</h1>
+                <h3>맛!!영양!!비쥬얼!!모두 챙긴 Le Calandre만의 독자적인<br>
+                    샐러드! 신선한 재료는 물론 풍부한 영양도 챙겼습니다!<br>
+                    비타민 고루고루 Le Calandre샐러드로 챙기세요♡
+                </h3>
+            </div>
+            <div class="img_salad">
+                <img src="img/index2/ssam.png">
+            </div>
+            <div class="img_salad2">
+                <img src="img/salad/1.png">
+            </div>
+            <div class="img_salad3">
+                <img src="img/salad/2.png">
+            </div>
+        </div>
+        <div id="section4">
+            <div class="contents_box">
+                <h1>Drink</h1>
+                <h3>
+                    Le Calandre의 다양한 메뉴들과 함께라면 더욱 행복해지는!<br>
+                    신선하고 맛있는 과일들로 Le Calandre 가 직접 만든 쥬스가<br>
+                    다양하게 준비되어 있어요!함께 즐겨보자구요!!
+                </h3>
+            </div>
+            <div class="img_drink">
+                <img src="img/index2/lemon_1.png">
+            </div>
+            <div class="img_drink2">
+                <img src="img/drink/3.png">
+            </div>
+        </div>
+        <div id="menu">
+            <div id="menu1">
+                <div class="menus_content">
+                    <img src="img/pizza/6.png">
+                    <h3>Le Calandre 피자</h3>
+                    <h4>Le Calandre Pizza</h4>
+                    <h5>38,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/pizza/2.png">
+                    <h3>야채피자</h3>
+                    <h4>Vegetable Pizza</h4>
+                    <h5>32,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/pizza/3.png">
+                    <h3>바질 피자</h3>
+                    <h4>Basil Pizza</h4>
+                    <h5>30,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/pizza/1.png">
+                    <h3>치즈피자</h3>
+                    <h4>Cheese Pizza</h4>
+                    <h5>28,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/pizza/4.png">
+                    <h3>페페로니 피자</h3>
+                    <h4>Pepperoni Pizza</h4>
+                    <h5>32,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/pizza/5.png">
+                    <h3>머쉬룸 피자</h3>
+                    <h4>Mushroom Pizza</h4>
+                    <h5>32,000원</h5>
+                </div>
+            </div>
+            <div id="menu2">
+                <div class="menus_content">
+                    <img src="img/pasta/1.png">
+                    <h3>바질 파스타</h3>
+                    <h4>Basil Pasta</h4>
+                    <h5>32,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/pasta/2.png">
+                    <h3>토마토 파스타</h3>
+                    <h4>Tomato Pasta</h4>
+                    <h5>30,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/pasta/3.png">
+                    <h3>바다 파스타</h3>
+                    <h4>sea Pasta</h4>
+                    <h5>36,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/pasta/4.png">
+                    <h3>토마토 & 바질 파스타</h3>
+                    <h4>T & B Pasta</h4>
+                    <h5>34,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/pasta/5.png">
+                    <h3>로제 파스타</h3>
+                    <h4>Rose Pasta</h4>
+                    <h5>34,000원</h5>
+                </div>
+            </div>
+            <div id="menu3">
+                <div class="menus_content">
+                    <img src="img/salad/1.png">
+                    <h3>샐러드</h3>
+                    <h4>salad</h4>
+                    <h5>11,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/salad/2.png">
+                    <h3>새우 샐러드</h3>
+                    <h4>Shrimp Salad</h4>
+                    <h5>13,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/salad/3.png">
+                    <h3>닭가슴살 샐러드</h3>
+                    <h4>Chicken Salad</h4>
+                    <h5>13,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/salad/5.png">
+                    <h3>이것저것 샐러드</h3>
+                    <h4>This & That Salad</h4>
+                    <h5>13,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/salad/4.png">
+                    <h3>아보카도 & 두부 샐러드</h3>
+                    <h4>Avocado & Tofu Salad</h4>
+                    <h5>15,000원</h5>
+                </div>
+            </div>
+            <div id="menu4">
+                <div class="menus_content">
+                    <img src="img/drink/1.png">
+                    <h3>자몽 쥬스</h3>
+                    <h4>grapefruit Juice</h4>
+                    <h5>5,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/drink/4.png">
+                    <h3>수박 쥬스</h3>
+                    <h4>Watermelon Juice</h4>
+                    <h5>5,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/drink/3.png">
+                    <h3>레몬 쥬스</h3>
+                    <h4>Lemon Juice</h4>
+                    <h5>5,000원</h5>
+                </div>
+                <div class="menus_content">
+                    <img src="img/drink/2.png">
+                    <h3>콜라</h3>
+                    <h4>Cola</h4>
+                    <h5>5,000원</h5>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <h4>All Right Reserved-2023</h4>
+        </div>
+
+
+</body>
+</html>

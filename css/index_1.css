@@ -1,0 +1,74 @@
+@charset "utf-8";
+*{box-sizing:border-box;}
+@font-face {
+    font-family:'ChosunSg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunSg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+header{width:100%;height:85px;margin:0 auto;background-color:#273129;}
+header img{width:100px;margin:0 auto;display: block;}
+nav{width:100%; height:50px;background-color:#f8f7f2;border-bottom:1px solid #e6e6e6;margin:0 auto;}
+nav ul{width:1500px; height:50px;display:flex;flex-direction:row;align-items:center;margin:0 auto;}
+ul>li>a{margin:0 0 0 20px;color:#273129;font-family: 'Bebas Neue', sans-serif;font-size:23px;}
+#slider{width:100%;height:650px;background-color:#f8f7f2;}
+#slider .slider_content{width:1500px;margin:0 auto; display:flex;justify-content:space-evenly;}
+#slider .img_box{width:500px;height:500px;margin:40px 0 0 0;}
+#slider .img_box img{width:500px;height:500px;}
+#slider .contents{height:450px;margin:80px 0 0 0;}
+#slider .contents h1{padding:0px 0 10px 0;}
+#slider .contents h4{padding:10px 0 0 0;font-family:'ChosunSg';}
+#slider .contents h3{padding:30px 0 0 0;font-family:'ChosunSg';}
+#slider .contents h5{padding:60px 0 10px 0;font-family:'ChosunSg';}
+#slider .contents h6{font-family:'ChosunSg';}
+#slider .contents button{margin:10px 0 0 0;font-family:'ChosunSg';}
+#slider .contents .food_info{float:left;margin:10px 50px 0 0;}
+#slider button:nth-of-type(1){margin:30px 0 0 0;width:120px;height:50px;border:1px solid; background:none ;color:#273129;font-family: 'Outfit', sans-serif;}
+#slider button:nth-of-type(2){margin:30px 0 0 0;width:120px;height:50px;border:1px solid; background:none ;color:#273129;font-family: 'Outfit', sans-serif;}
+#slider button:hover{background-color:#273129;color:#ffffff;}
+#explain{width:1500px;height:150px;background-color:#f8f7f2;margin:0 auto;display:flex;flex-direction:column;}
+#explain .explain_box{display:flex;justify-content:center;}
+#explain h4{width:150px;height:90px; margin:30px 0 0 0;}
+#explain p{width:800px;font-size:13px;margin:30px 0 0 0;}
+
+#origin{width:1500px;height:150px;background-color:#f8f7f2;margin:0 auto;display:flex;flex-direction:column;}
+#origin .origin_box{height:120px; display:flex;justify-content:center;align-items:center;}
+#origin h4{width:150px;margin:30px 0 0 0;font-family:'ChosunSg';}
+#origin p{width:800px;float:left;font-size:13px;margin:30px 0 0 0;}
+
+#others{width:1500px;height:600px;background-color:#f8f7f2;margin:0 auto;display:flex;flex-direction:column;}
+#others h1{margin:30px 0 0 40px;}
+#others .recommend_others{display:flex;flex-direction:row;margin:10px 0 0 60px;}
+#others .recommend_others p{color:#718375;font-size:17px;font-family:'ChosunSg';}
+#others .recommend_others p:nth-of-type(2n):hover{cursor: pointer;font-weight:bold;color:#273129;}
+#others .other__content{width:100%;height:1000px; display:flex;align-items:center;justify-content:space-evenly;}
+#others .other__content > img{width:10px;height:20px;margin:0 0 60px 0;}
+#others .content_box_pizza{width:1350px;display:flex;justify-content:space-between;align-items:center;}
+#others .content_box_pasta{width:1350px;display:flex;justify-content:space-between;align-items:center;display:none;}
+#others .content_box_salad{width:1350px;display:flex;justify-content:space-between;align-items:center;display:none;}
+#others .content_box_drink{width:1350px;display:flex;justify-content:space-between;align-items:center;display:none;}
+#others .img_text{display:flex;flex-direction:column;align-items:center;}
+#others .img_text h4:nth-of-type(2){margin:10px 0;}
+#others .other__content .content_box_pizza .img_text>img{width:300px;height:300px;margin:0 0 20px 0;}
+#others .other__content .content_box_pasta .img_text>img{width:300px;height:300px;margin:0 0 20px 0;}
+#others .other__content .content_box_salad .img_text>img{width:300px;height:300px;margin:0 0 20px 0;}
+#others .other__content .content_box_drink .img_text>img{width:170px;height:300px;height:360px; margin:0 0 20px 0;}
+#others .other__content h4{font-family:'ChosunSg';}
+.sun1{width:1300px; border-bottom:1px solid #e6e6e6;margin:0 auto;background:#f8f7f2;}
+#review{width:1500px;height:550px; background-color:#f8f7f2;margin:0 auto;}
+#review h1{margin:40px 0 40px 40px;}
+#review .review_box{width:1200px;height:400px;margin:0 auto;display:flex;flex-direction:column;}
+#review .review_box .review_comment{width:100%;height:90px; border-bottom:1px solid #e6e6e6;display:flex;align-items:center;}
+#review .review_box .review_comment img{width:15px;height:15px;}
+#review .review_box .review_comment .review_comment_box{width:100%; display:flex;justify-content:space-around;}
+#review .review_box .review_comment .review_comment_box p:nth-of-type(1){width:70%;}
+#review .review_box .review_comment p{font-size:12px;}
+
+
+.info{width:1500px;height:45px;margin:0 auto;background-color:#000000;}
+.info h4{color:#ffffff;text-align:center;padding:10px; font-family: 'Maven Pro', sans-serif;}

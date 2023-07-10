@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ss</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index_1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2" rel="stylesheet">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $('#others .recommend_others p:nth-of-type(2)').css('font-weight','bold').css('color','#273129')
+            $('#others .recommend_others p:nth-of-type(2)').click(function(){
+                $('#others .content_box_pizza').fadeIn().css("display","flex");
+                $('.recommend_others p:nth-of-type(2)').css('font-weight','bold').css('color','#273129')
+                $('.recommend_others p:nth-of-type(4)').removeAttr('style')
+                $('.recommend_others p:nth-of-type(6)').removeAttr('style')
+                $('.recommend_others p:nth-of-type(8)').removeAttr('style')
+
+                $('#others .content_box_pasta').hide();
+                $('#others .content_box_salad').hide();
+                $('#others .content_box_drink').hide();
+            });
+            $('#others .recommend_others p:nth-of-type(4)').click(function(){
+                $('#others .content_box_pizza').hide();
+                $('#others .content_box_pasta').fadeIn().css("display","flex");
+                $('.recommend_others p:nth-of-type(4)').css('font-weight','bold').css('color','#273129')
+                $('.recommend_others p:nth-of-type(2)').removeAttr('style')
+                $('.recommend_others p:nth-of-type(6)').removeAttr('style')
+                $('.recommend_others p:nth-of-type(8)').removeAttr('style')
+                $('#others .content_box_salad').hide();
+                $('#others .content_box_drink').hide();
+            });
+            $('#others .recommend_others p:nth-of-type(6)').click(function(){
+                $('#others .content_box_pizza').hide();
+                $('#others .content_box_pasta').hide();
+                $('#others .content_box_salad').fadeIn().css("display","flex");
+                $('.recommend_others p:nth-of-type(6)').css('font-weight','bold').css('color','#273129')
+                $('.recommend_others p:nth-of-type(2)').removeAttr('style')
+                $('.recommend_others p:nth-of-type(4)').removeAttr('style')
+                $('.recommend_others p:nth-of-type(8)').removeAttr('style')
+                $('#others .content_box_drink').hide();
+            });
+            $('#others .recommend_others p:nth-of-type(8)').click(function(){
+                $('#others .content_box_pizza').hide();
+                $('#others .content_box_pasta').hide();
+                $('#others .content_box_salad').hide();
+                $('#others .content_box_drink').fadeIn().css("display","flex");
+                $('.recommend_others p:nth-of-type(8)').css('font-weight','bold').css('color','#273129')
+                $('.recommend_others p:nth-of-type(2)').removeAttr('style')
+                $('.recommend_others p:nth-of-type(4)').removeAttr('style')
+                $('.recommend_others p:nth-of-type(6)').removeAttr('style')
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="img/logo/logo2.png">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">ORDER</a></li>
+        </ul>
+    </nav>
+    <div id="slider">
+            <div class="slider_content">
+            <div class="img_box">
+                <img src="img/index1/pizza_1.png">
+            </div>
+            <div class="contents">
+                <h1>Le Calandre Pizza</h1>
+                <h3>Le Calandre Pizz의 시그니처 피자!</h3>
+                <h3>38,000원</h3>
+                <h5>- 영양정보 -</h5>
+                <div class="food_info">
+                    <h6>중량</h6>
+                    <h4>752g</h4>
+                </div>
+                <div class="food_info">
+                    <h6>지방</h6>
+                    <h4>10.49g</h4>
+                </div>
+                <div class="food_info">
+                    <h6>탄수화물</h6>
+                    <h4>28.9g</h4>
+                </div><br><br><br>
+                <div class="food_info">
+                    <h6>당류</h6>
+                        <h4>12.5g</h4>
+                    </div>
+                <div class="food_info">
+                    <h6>나트륨</h6>
+                        <h4>966.5mg</h4>
+                    </div>
+                <div class="food_info">
+                    <h6>칼로리</h6>
+                        <h4>1352kal</h4>
+                    </div><br>
+                <button>ORDER NOW</button>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+    <div id="explain">
+        <div class="sun1"></div>
+        <div class="explain_box">
+            <h4>About<br>Le Calandre Pizza</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type 
+                specimen book. It has survived not only five centuries, but also the leap into 
+                electronic typesetting, remaining essentially unchanged. It was popularised in
+                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                and more recently with desktop publishing software like Aldus PageMaker including
+                versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+    <div id="origin">
+        <div class="sun1"></div>
+        <div class="origin_box">
+            <h4>원산지</h4>
+            <p>토마토(국산),밀가루(미국산),전분(외국산: 러시아,헝가리,세르비아 등),향신 조미료(국산) </p>
+        </div>
+    </div>
+    <div id="others">
+        <div class="sun1"></div>
+        <h1>Related Products</h1>
+        <div class="recommend_others">
+            <p>&nbsp;|&nbsp;</p>
+            <p>피자&nbsp;</p>
+            <p>&nbsp;|&nbsp;</p>
+            <p>파스타&nbsp;</p>
+            <p>&nbsp;|&nbsp;</p>
+            <p>샐러드&nbsp;</p>
+            <p>&nbsp;|&nbsp;</p>
+            <p>음료&nbsp;</p>
+            <p>&nbsp;|&nbsp;</p>
+        </div>
+        <div class="other__content">
+
+            <img src="img/index1/down-arrow.png">
+
+            <div class="content_box_pizza">
+                <div class="img_text">
+                    <img src="img/pizza/1.png">
+                    <h4>치즈 피자</h4>
+                    <h4>28,000원</h4>
+                </div>
+                <div class="img_text">
+                    <img src="img/pizza/2.png">
+                    <h4>야채 피자</h4>
+                    <h4>32,000원</h4>
+                </div>
+                <div class="img_text">
+                    <img src="img/pizza/3.png">
+                    <h4>바질 피자</h4>
+                    <h4>30,000원</h4>
+                </div>
+                <div class="img_text">
+                    <img src="img/pizza/4.png">
+                    <h4>페페로니 피자</h4>
+                    <h4>32,000원</h4>
+                </div>
+            </div>
+            <div class="content_box_pasta">
+                <div class="img_text">
+                    <img src="img/pasta/1.png">
+                    <h4>바질 파스타</h4>
+                    <h4>32,000원</h4>
+                </div>
+                <div class="img_text">
+                    <img src="img/pasta/2.png">
+                    <h4>토마토 파스타</h4>
+                    <h4>30,000원</h4>
+                </div>
+                <div class="img_text">
+                    <img src="img/pasta/3.png">
+                    <h4>바다 파스타</h4>
+                    <h4>36,000원</h4>
+                </div>
+                <div class="img_text">
+                    <img src="img/pasta/4.png">
+                    <h4>토마토 & 바질 파스타</h4>
+                    <h4>34,000원</h4>
+                </div>
+            </div>
+            <div class="content_box_salad">
+                <div class="img_text">
+                    <img src="img/salad/1.png">
+                    <h4>샐러드</h4>
+                    <h4>11,000원</h4>
+                </div>
+                <div class="img_text">
+                    <img src="img/salad/2.png">
+                    <h4>새우 샐러드</h4>
+                    <h4>13,000원</h4>
+                </div>
+                <div class="img_text">
+                    <img src="img/salad/3.png">
+                    <h4>닭가슴살 샐러드</h4>
+                    <h4>13,000원</h4>
+                </div>
+                <div class="img_text">
+                    <img src="img/salad/4.png">
+                    <h4>아보카도 샐러드</h4>
+                    <h4>15,000원</h4>
+                </div>
+            </div>
+            <div class="content_box_drink">
+                <div class="img_text">
+                    <img src="img/drink/1.png">
+                    <h4>자몽 주스</h4>
+                    <h4>5,000원</h4>
+                </div>
+                <div class="img_text">
+                    <img src="img/drink/3.png">
+                    <h4>레몬 주스</h4>
+                    <h4>5,000원</h4>
+                </div>
+                <div class="img_text">
+                    <img src="img/drink/2.png">
+                    <h4>콜라</h4>
+                    <h4>5,000원</h4>
+                </div>
+                <div class="img_text">
+                    <img src="img/drink/4.png">
+                    <h4>수박 주스</h4>
+                    <h4>5,000원</h4>
+                </div>
+            </div>
+            <img src="img/index1/down-arrow_1.png">
+        </div>
+    </div>
+    <div id="review">
+        <div class="sun1"></div>
+        <h1>Review</h1>
+        <div class="review_box">
+            <div class="review_comment">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star.png">
+                <div class="review_comment_box">
+                    <p>존맛탱...!! 이런곳 나만 알고싶지만 넘 마싯어서 친구 여럿한테 연락 돌렸다 ㅜ 담에 여기서 파티하기루 했다!!</p>
+                    <p>소찌</p>
+                    <P>2023/08/16</P>
+                </div>
+            </div>
+            <div class="review_comment">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star.png">
+                <div class="review_comment_box">
+                    <p>좋아요오~~</p>
+                    <p>밍규</p>
+                    <P>2023/06/14</P>
+                </div>
+            </div>
+            <div class="review_comment">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star_1.png">
+                <div class="review_comment_box">
+                    <p>여기 시그니처 피자 진짜 고급스러운 맛남 또 가고 싶은집은 오랫만인듯</p>
+                    <p>시리야</p>
+                    <P>2023/02/16</P>
+                </div>
+            </div>
+            <div class="review_comment">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star.png">
+                <img src="img/index1/review/star.png">
+                <div class="review_comment_box">
+                    <p>꿀맛♡</p>
+                    <p>네이버페이 구매자</p>
+                    <P>2022/12/16</P>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="info">
+        <h4>All Right Reserved-2023</h4>
+    </div>
+</body>
+</html>
