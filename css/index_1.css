@@ -28,39 +28,44 @@ ul>li>a{margin:0 0 0 20px;color:#273129;font-family: 'Bebas Neue', sans-serif;fo
 #slider .contents h6{font-family:'ChosunSg';}
 #slider .contents button{margin:10px 0 0 0;font-family:'ChosunSg';}
 #slider .contents .food_info{float:left;margin:10px 50px 0 0;}
-#slider button:nth-of-type(1){margin:30px 0 0 0;width:120px;height:50px;border:1px solid; background:none ;color:#273129;font-family: 'Outfit', sans-serif;}
-#slider button:nth-of-type(2){margin:30px 0 0 0;width:120px;height:50px;border:1px solid; background:none ;color:#273129;font-family: 'Outfit', sans-serif;}
+#slider button:nth-of-type(1){margin:30px 0 0 0px;width:120px;height:50px;border:1px solid; background:none ;color:#273129;font-family: 'Outfit', sans-serif;}
+#slider button:nth-of-type(2){margin:30px 0 0 20px;width:120px;height:50px;border:1px solid; background:none ;color:#273129;font-family: 'Outfit', sans-serif;}
 #slider button:hover{background-color:#273129;color:#ffffff;}
-#explain{width:1500px;height:150px;background-color:#f8f7f2;margin:0 auto;display:flex;flex-direction:column;}
+#explain{width:100%;height:150px;background-color:#f8f7f2;margin:0 auto;display:flex;flex-direction:column;}
 #explain .explain_box{display:flex;justify-content:center;}
 #explain h4{width:150px;height:90px; margin:30px 0 0 0;}
 #explain p{width:800px;font-size:13px;margin:30px 0 0 0;}
 
-#origin{width:1500px;height:150px;background-color:#f8f7f2;margin:0 auto;display:flex;flex-direction:column;}
+#origin{width:100%;height:150px;background-color:#f8f7f2;margin:0 auto;display:flex;flex-direction:column;}
 #origin .origin_box{height:120px; display:flex;justify-content:center;align-items:center;}
 #origin h4{width:150px;margin:30px 0 0 0;font-family:'ChosunSg';}
 #origin p{width:800px;float:left;font-size:13px;margin:30px 0 0 0;}
 
-#others{width:1500px;height:600px;background-color:#f8f7f2;margin:0 auto;display:flex;flex-direction:column;}
-#others h1{margin:30px 0 0 40px;}
-#others .recommend_others{display:flex;flex-direction:row;margin:10px 0 0 60px;}
-#others .recommend_others p{color:#718375;font-size:17px;font-family:'ChosunSg';}
-#others .recommend_others p:nth-of-type(2n):hover{cursor: pointer;font-weight:bold;color:#273129;}
-#others .other__content{width:100%;height:1000px; display:flex;align-items:center;justify-content:space-evenly;}
-#others .other__content > img{width:10px;height:20px;margin:0 0 60px 0;}
-#others .content_box_pizza{width:1350px;display:flex;justify-content:space-between;align-items:center;}
-#others .content_box_pasta{width:1350px;display:flex;justify-content:space-between;align-items:center;display:none;}
-#others .content_box_salad{width:1350px;display:flex;justify-content:space-between;align-items:center;display:none;}
-#others .content_box_drink{width:1350px;display:flex;justify-content:space-between;align-items:center;display:none;}
-#others .img_text{display:flex;flex-direction:column;align-items:center;}
-#others .img_text h4:nth-of-type(2){margin:10px 0;}
-#others .other__content .content_box_pizza .img_text>img{width:300px;height:300px;margin:0 0 20px 0;}
-#others .other__content .content_box_pasta .img_text>img{width:300px;height:300px;margin:0 0 20px 0;}
-#others .other__content .content_box_salad .img_text>img{width:300px;height:300px;margin:0 0 20px 0;}
-#others .other__content .content_box_drink .img_text>img{width:170px;height:300px;height:360px; margin:0 0 20px 0;}
-#others .other__content h4{font-family:'ChosunSg';}
+#others{width:100%;height:600px;background-color:#f8f7f2;}
+#others .others_contents{width:1500px;margin:0 auto; display:flex;flex-direction:column;}
+#others .others_contents h1{margin:30px 0 0 40px;}
+#others .others_contents .recommend_others{display:flex;flex-direction:row;margin:10px 0 0 60px;}
+#others .others_contents .recommend_others p{color:#718375;font-size:17px;font-family:'ChosunSg';}
+#others .others_contents .recommend_others p:nth-of-type(2n):hover{cursor: pointer;font-weight:bold;color:#273129;}
+#others .others_contents .other__content{width:100%;height:500px; display:flex;align-items:center;justify-content:space-evenly;}
+#others .others_contents .other__content > img{width:10px;height:20px;margin:0 0 60px 0;}
+#others .others_contents .content_box_pizza{width:1350px;display:flex;justify-content:space-between;align-items:center;}
+#others .others_contents .content_box_pasta{width:1350px;display:flex;justify-content:space-between;align-items:center;display:none;}
+#others .others_contents .content_box_salad{width:1350px;display:flex;justify-content:space-between;align-items:center;display:none;}
+#others .others_contents .content_box_drink{width:1350px;display:flex;justify-content:space-between;align-items:center;display:none;}
+#others .others_contents .img_text{display:flex;flex-direction:column;align-items:center;}
+#others .others_contents .img_text h4:nth-of-type(2){margin:10px 0;}
+#others .others_contents .other__content .content_box_pizza .img_text>img{width:300px;height:300px;margin:0 0 20px 0;}
+#others .others_contents .other__content .content_box_pasta .img_text>img{width:300px;height:300px;margin:0 0 20px 0;}
+#others .others_contents .other__content .content_box_salad .img_text>img{width:300px;height:300px;margin:0 0 20px 0;}
+#others .others_contents .other__content .content_box_drink .img_text>img{width:170px;height:300px;height:360px; margin:0 0 20px 0;}
+#others .others_contents .other__content h4{font-family:'ChosunSg';}
+
+
 .sun1{width:1300px; border-bottom:1px solid #e6e6e6;margin:0 auto;background:#f8f7f2;}
-#review{width:1500px;height:550px; background-color:#f8f7f2;margin:0 auto;}
+
+#review{width:100%;height:550px;background-color:#f8f7f2;}
+#review .review_contents{width:1500px;margin:0 auto;}
 #review h1{margin:40px 0 40px 40px;}
 #review .review_box{width:1200px;height:400px;margin:0 auto;display:flex;flex-direction:column;}
 #review .review_box .review_comment{width:100%;height:90px; border-bottom:1px solid #e6e6e6;display:flex;align-items:center;}
@@ -70,5 +75,5 @@ ul>li>a{margin:0 0 0 20px;color:#273129;font-family: 'Bebas Neue', sans-serif;fo
 #review .review_box .review_comment p{font-size:12px;}
 
 
-.info{width:1500px;height:45px;margin:0 auto;background-color:#000000;}
+.info{width:100%;height:45px;margin:0 auto;background-color:#000000;}
 .info h4{color:#ffffff;text-align:center;padding:10px; font-family: 'Maven Pro', sans-serif;}
