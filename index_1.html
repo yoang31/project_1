@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script>
@@ -150,28 +151,36 @@
             <div class="other__content">
 
                 <img src="img/index1/down-arrow.png">
-
-                <div class="content_box_pizza">
-                    <div class="img_text">
-                        <img src="img/pizza/1.png">
-                        <h4>치즈 피자</h4>
-                        <h4>28,000원</h4>
+                <div class="pizzaa">
+                    <div class="content_box_pizza">
+                        <div class="img_text">
+                            <img src="img/pizza/1.png">
+                            <h4>치즈 피자</h4>
+                            <h4>28,000원</h4>
+                        </div>
+                        <div class="img_text">
+                            <img src="img/pizza/2.png">
+                            <h4>야채 피자</h4>
+                            <h4>32,000원</h4>
+                        </div>
+                        <div class="img_text">
+                            <img src="img/pizza/3.png">
+                            <h4>바질 피자</h4>
+                            <h4>30,000원</h4>
+                        </div>
+                        <div class="img_text">
+                            <img src="img/pizza/4.png">
+                            <h4>페페로니 피자</h4>
+                            <h4>32,000원</h4>
+                        </div>
                     </div>
-                    <div class="img_text">
-                        <img src="img/pizza/2.png">
-                        <h4>야채 피자</h4>
-                        <h4>32,000원</h4>
-                    </div>
-                    <div class="img_text">
-                        <img src="img/pizza/3.png">
-                        <h4>바질 피자</h4>
-                        <h4>30,000원</h4>
-                    </div>
-                    <div class="img_text">
-                        <img src="img/pizza/4.png">
-                        <h4>페페로니 피자</h4>
-                        <h4>32,000원</h4>
-                    </div>
+                    <div class="content_box_pizza">
+                        <div class="img_text">
+                            <img src="img/pizza/5.png">
+                            <h4>머쉬룸 피자</h4>
+                            <h4>32,000원</h4>
+                        </div>
+                    </div>   
                 </div>
                 <div class="content_box_pasta">
                     <div class="img_text">
@@ -304,4 +313,38 @@
         <h4>All Right Reserved-2023</h4>
     </div>
 </body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var pizzas=$('#others .others_contents .pizzaa');
+        var pizza_count= $('#others .others_contents .pizzaa').children().length;
+        var pizza=$('#others .others_contents .pizzaa .content_box_pizza');
+        var pizza_position=1;
+        $('#others .others_contents .other__content > img:nth-of-type(1)').click(function(){
+            console.log(pizza_count);
+            back();
+
+       });
+       
+        $('#others .others_contents .other__content > img:nth-of-type(2)').click(function(){
+            next();
+       });
+
+       function back(){
+            if(1<pizza_position){
+                pizza.animate({
+                    left:'+=1430px'
+                });
+                pizza_position--;
+            }
+       } 
+       function next(){
+            if(pizza_count>pizza_position){
+                pizza.animate({
+                    left:'-=1430px'
+                });
+                pizza_position++;
+            }
+       }
+    });
+</script>
 </html>

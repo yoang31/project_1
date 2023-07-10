@@ -47,15 +47,23 @@ ul>li>a{margin:0 0 0 20px;color:#273129;font-family: 'Bebas Neue', sans-serif;fo
 #others .others_contents .recommend_others{display:flex;flex-direction:row;margin:10px 0 0 60px;}
 #others .others_contents .recommend_others p{color:#718375;font-size:17px;font-family:'ChosunSg';}
 #others .others_contents .recommend_others p:nth-of-type(2n):hover{cursor: pointer;font-weight:bold;color:#273129;}
-#others .others_contents .other__content{width:100%;height:500px; display:flex;align-items:center;justify-content:space-evenly;}
-#others .others_contents .other__content > img{width:10px;height:20px;margin:0 0 60px 0;}
-#others .others_contents .content_box_pizza{width:1350px;display:flex;justify-content:space-between;align-items:center;}
-#others .others_contents .content_box_pasta{width:1350px;display:flex;justify-content:space-between;align-items:center;display:none;}
-#others .others_contents .content_box_salad{width:1350px;display:flex;justify-content:space-between;align-items:center;display:none;}
-#others .others_contents .content_box_drink{width:1350px;display:flex;justify-content:space-between;align-items:center;display:none;}
+#others .others_contents .other__content{width:1500px;height:500px;position:relative;overflow:hidden;}
+
+#others .others_contents .other__content > img:nth-of-type(1){width:10px;height:20px;position: absolute;left:0;top:200px;}
+#others .others_contents .other__content > img:nth-of-type(2){width:10px;height:20px;position: absolute;right:0;top:200px;}
+
+#others .others_contents .pizzaa{width:3000px;height:371px;display:flex;position:relative;top:60px;left:80px;}
+#others .others_contents .pizzaa .content_box_pizza{width:1350px;display:flex;justify-content:space-between;align-items:center;position:absolute;}
+#others .others_contents .pizzaa .content_box_pizza:nth-of-type(2){width:1350px;display:flex;justify-content:space-between;align-items:center;position:absolute;left:1420px;}
+
+#others .others_contents .content_box_pasta{width:1350px;display:flex;justify-content:space-between;align-items:center;display:none;position:absolute;top:60px;left:80px;}
+#others .others_contents .content_box_salad{width:1350px;display:flex;justify-content:space-between;align-items:center;display:none;position:absolute;top:60px;left:80px;}
+#others .others_contents .content_box_drink{width:1350px;display:flex;justify-content:space-between;align-items:center;display:none;position:absolute;top:60px;left:80px;}
 #others .others_contents .img_text{display:flex;flex-direction:column;align-items:center;}
 #others .others_contents .img_text h4:nth-of-type(2){margin:10px 0;}
 #others .others_contents .other__content .content_box_pizza .img_text>img{width:300px;height:300px;margin:0 0 20px 0;}
+#others .others_contents .other__content .content_box_pizza2 .img_text>img{width:300px;height:300px;margin:0 0 20px 0;}
+
 #others .others_contents .other__content .content_box_pasta .img_text>img{width:300px;height:300px;margin:0 0 20px 0;}
 #others .others_contents .other__content .content_box_salad .img_text>img{width:300px;height:300px;margin:0 0 20px 0;}
 #others .others_contents .other__content .content_box_drink .img_text>img{width:170px;height:300px;height:360px; margin:0 0 20px 0;}
@@ -76,4 +84,4 @@ ul>li>a{margin:0 0 0 20px;color:#273129;font-family: 'Bebas Neue', sans-serif;fo
 
 
 .info{width:100%;height:45px;margin:0 auto;background-color:#000000;}
-.info h4{color:#ffffff;text-align:center;padding:10px; font-family: 'Maven Pro', sans-serif;}
+.info h4{color:#ffffff;text-align:center;padding:10px;font-family: 'Maven Pro', sans-serif;}
